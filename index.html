@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-tech Point Solution</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); color: #2d3748; line-height: 1.6; min-height: 100vh; }
+        header { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); color: white; text-align: center; padding: 2.5rem 1rem; border-bottom: 4px solid #ff5722; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        
+        /* Logo Styling Section */
+        .logo-container { max-width: 160px; margin: 0 auto 1rem auto; display: block; }
+        .logo-container img { width: 100%; height: auto; display: block; border-radius: 8px; }
+        
+        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .slogan { font-size: 1rem; color: #cbd5e0; font-style: italic; margin: 1rem 0; font-weight: 300; }
+        .campus-info { font-size: 0.85rem; color: #a0aec0; font-weight: 500; letter-spacing: 0.5px; }
+        .container { max-width: 750px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: white; padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-left: 5px solid #ff5722; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+        .card h2 { color: #1a202c; font-size: 1.4rem; margin-bottom: 1.3rem; border-bottom: 2px solid #f0f4f8; padding-bottom: 0.7rem; font-weight: 600; }
+        
+        .catalog-item { padding: 1.2rem 0; border-bottom: 1px solid #e2e8f0; }
+        .catalog-item:last-child { border-bottom: none; }
+        .product-image { width: 100%; max-height: 160px; background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%); border-radius: 8px; margin-bottom: 0.8rem; display: flex; align-items: center; justify-content: center; color: #a0aec0; font-size: 0.9rem; font-weight: 500; }
+        .item-main { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 0.5rem; flex-wrap: wrap; }
+        .item-title { flex: 1; color: #1a202c; font-size: 1rem; }
+        .price-tag { color: #ff5722; font-size: 1.1rem; background: #fff5f1; padding: 0.3rem 0.8rem; border-radius: 6px; }
+        .item-desc { color: #718096; font-size: 0.9rem; margin-top: 0.4rem; line-height: 1.5; }
+        
+        .info-row { margin-bottom: 1rem; font-size: 0.95rem; line-height: 1.6; }
+        .info-row strong { color: #1a202c; font-weight: 600; }
+        .info-row ul { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .info-row li { margin-bottom: 0.4rem; }
+        
+        .btn-whatsapp { display: block; width: 100%; background: linear-gradient(135deg, #25d366 0%, #1fa851 100%); color: white; text-align: center; padding: 1.3rem; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 1.1rem; margin-top: 2rem; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35); text-transform: uppercase; border: none; cursor: pointer; transition: all 0.3s ease; }
+        .btn-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45); }
+        
+        footer { text-align: center; padding: 3rem 1rem; color: #718096; font-size: 0.85rem; }
+        
+        @media (max-width: 600px) {
+            header { padding: 2rem 1rem; }
+            .card { padding: 1.5rem; }
+            h1 { font-size: 1.5rem; }
+            .item-main { flex-direction: column; }
+            .price-tag { margin-top: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- The Logo placement area -->
+        <div class="logo-container">
+            <img src="logo.png" alt="E-Tech Point Solution Logo">
+        </div>
+        <h1>E-Tech Point Solution</h1>
+        <p class="slogan">Fast, Reliable, and Affordable Campus Tech Solutions</p>
+        <p class="campus-info">University of Rwanda (Huye Campus) | +250 785 852 899</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Operations Card -->
+        <div class="card" style="border-left-color: #2d3748;">
+            <h2>Ordering, Payment & Delivery</h2>
+            <div class="info-row"><strong>How to Order:</strong> Tap the green button below. It safely links you directly to our verified WhatsApp Business desk.</div>
+            <div class="info-row"><strong>Cashless Payment:</strong> Safe and swift transactions processed via <strong>MTN MoMo</strong> on device delivery.</div>
+            <div class="info-row"><strong>Campus Delivery:</strong> 
+                <ul>
+                    <li><strong>FREE</strong> delivery pickup at the Main University Library terminal</li>
+                    <li>Direct hostel room dispatch for a low flat fee of <strong>500 RWF</strong></li>
+                    <li>Off-campus student hubs handled via local moto-taxi transport</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Products Card -->
+        <div class="card">
+            <h2>Services & Products Catalog</h2>
+            <div>
+                <div class="catalog-item">
+                    <div class="product-image">Software Installation Service</div>
+                    <div class="item-main">
+                        <span class="item-title">Software Installation & OS Flash</span>
+                        <span class="price-tag">5,000 RWF</span>
+                    </div>
+                    <div class="item-desc">Operating system cleanup, speed optimization, and secure setup of standard student tools like Office, SPSS, or MATLAB.</div>
+                </div>
+                <div class="catalog-item">
+                    <div class="product-image">Laptop Battery Replacement</div>
+                    <div class="item-main">
+                        <span class="item-title">Replacement Laptop Batteries</span>
+                        <span class="price-tag">25,000 RWF</span>
+                    </div>
+                    <div class="item-desc">Durable, premium replacement battery packs compatible with student models from HP, Dell, and Lenovo.</div>
+                </div>
+                <div class="catalog-item">
+                    <div class="product-image">Charging & Cable Accessories</div>
+                    <div class="item-main">
+                        <span class="item-title">Premium Charging & HDMI Cables</span>
+                        <span class="price-tag">3,000 RWF</span>
+                    </div>
+                    <div class="item-desc">High-speed charging connections and durable presentation link chords built for heavy academic use.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Button -->
+        <a href="https://wa.me/25078666666" class="btn-whatsapp" target="_blank">
+            Chat with Us on WhatsApp
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 E-tech Point Solution. Engineered for Academic Excellence.</p>
+    </footer>
+
+</body>
+</html>
